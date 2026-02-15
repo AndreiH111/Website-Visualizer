@@ -1,0 +1,17 @@
+{
+  "generator-ui5-project": {
+    "namespaceUI5": "com.webvis",
+    "projectName": "websitevisualizer",
+    "uimoduleName": "websitevisualizer",
+    "enableFPM": false,
+    "platform": "Static webserver",
+    "ui5Libs": "Content delivery network (OpenUI5)",
+    "newDir": false,
+    "initRepo": true,
+    "projectId": "com.webvis.websitevisualizer",
+    "uimodules": [
+      "myui5app",
+      "websitevisualizer"
+    ]
+  }
+}

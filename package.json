@@ -1,0 +1,17 @@
+{
+    "name": "com.webvis.websitevisualizer",
+    "scripts": {
+        "build": "mbt build --mtar com.webvis.websitevisualizer.mtar",
+        "build:workspaces": "npm run build --workspaces --if-present",
+        "deploy": "cf deploy mta_archives/com.webvis.websitevisualizer.mtar --retries 0",
+        "lint": "npm run lint --workspaces --if-present",
+        "ui5lint": "npm run ui5lint --workspaces --if-present",
+        "start:websitevisualizer": "npm start --workspace websitevisualizer"
+    },
+    "dependencies": {
+        "mbt": "^1"
+    },
+    "workspaces": [
+        "websitevisualizer"
+    ]
+}
