@@ -14,6 +14,22 @@
 				<core:Item id="productItem" text="{Name}" />
 			</suggestionItems>
 		</Input>
+				<Button 
+						id="generateImageButton"
+						text="Default"
+						press="onPress"
+						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+					<layoutData>
+						<FlexItemData id="flexItemData" growFactor="1" />
+					</layoutData>
+				</Button>
+			<VBox id="imageContainer" class="sapUiSmallMarginTop">
+				<Text id="detailsActiveImage" text="Active state image:" class="sapUiSmallMarginBottom" />
+				<Image id="activeImage" ariaDetails="detailsActiveImage" src="{img>/products/pic3}"
+					width="{/imageWidth}"
+					decorative="false"
+					press="handleImage3Press" />
+			</VBox>
         <content />
     </Page>
 </mvc:View>
